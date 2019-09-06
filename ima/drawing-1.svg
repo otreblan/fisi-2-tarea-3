@@ -66,9 +66,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.8"
-     inkscape:cx="338.31675"
-     inkscape:cy="607.82701"
+     inkscape:zoom="0.35"
+     inkscape:cx="-3.1467053"
+     inkscape:cy="323.60805"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -98,12 +98,13 @@
      inkscape:label="Referencia"
      inkscape:groupmode="layer"
      id="layer1"
-     style="display:inline;opacity:0.44370859" />
+     style="display:none;opacity:0.44370859"
+     sodipodi:insensitive="true" />
   <g
      inkscape:groupmode="layer"
      id="layer2"
      inkscape:label="Caja"
-     style="display:none;opacity:1"
+     style="display:inline;opacity:1"
      sodipodi:insensitive="true">
     <rect
        style="opacity:1;fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.26711661;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
@@ -551,7 +552,7 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="Texto"
-     style="display:none"
+     style="display:inline"
      sodipodi:insensitive="true">
     <path
        style="fill:none;stroke:#000000;stroke-width:0.26458332px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
