@@ -309,48 +309,6 @@
 \end{enumerate}
 %}}}
 
-\end{document}
-%}}}
-	% Circuito {{{
-	\begin{circuitikz}[american voltages]
-		\draw (0,2)
-			-- (0,-1)
-			-- (2,-1)
-			to [battery, a=$V$, v^>=$ $] (4,-1)
-			to [nos, invert, *-*, a=$S_1$] (4.5,-1)
-			-- (6,-1)
-			to [pC, a=$C_5$] (6,2)
-			-- (5,2)
-			;
-		\draw (5,2)
-			-- (5,1)
-			to [pC, a^=$C_4$] (3,1)
-			to [pC, a^=$C_3$] (1,1)
-			-- (1,2)
-			-- (0,2)
-			;
-		\draw (5,2)
-			-- (5,3)
-			to [pC, a=$C_2$] (3,3)
-			to [pC, a=$C_1$] (1,3)
-			-- (1,2)
-			;
-		\draw (3,1)
-			-- (3,1.75)
-			to [nos, mirror, *-*, a=$S_3$] (3,2.25)
-			-- (3,3)
-			;
-		% Esto es para tener el texto alineado
-		\ctikzset{label/align = straight}
-		\draw (3,1)
-			-- +(135:{sqrt(2)-0.25})
-			to [nos, *-*, a=$S_2$] +(135:1.7)
-			-- +(135:{sqrt(2)-0.25})
-			;
-		\end{circuitikz}
-
-	% }}}
-%}}}
 
 \end{document}
 %}}}
