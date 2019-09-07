@@ -100,7 +100,7 @@ Algo aislante que está dentro de un capacitor.
 Se pone entre las placas de un capacitor para aumentar su capacitancia.
 
 \subsection*{¿De qué depende la rapidez de carga o descarga de un capacitor?}%
-Depende del voltaje del capacitor, su capacitancia y la resistencia del circuito.
+Depende de la diferencia de potencial, su capacitancia y la resistencia del circuito.
 
 % }}}
 % Problemas{{{
@@ -108,7 +108,7 @@ Depende del voltaje del capacitor, su capacitancia y la resistencia del circuito
 \subsection*{En el siguiente circuito: $C_1 = 1\mu F$,
 	$C_2 = 2\mu F$,
 	$C_3 = 3\mu F$,
-	$C_2 = 4\mu F$,
+	$C_4 = 4\mu F$,
 	y $V_{ad}=15V$. Determina:}%
 	% Cosas antiguas {{{
 	%\noindent
@@ -238,6 +238,52 @@ Depende del voltaje del capacitor, su capacitancia y la resistencia del circuito
 		\end{circuitikz}
 	% }}}
 	\end{minipage}
+	\begin{enumerate}[label=\alph*.]
+		\item
+			\begin{align*}
+				V_{ad} &= 15V\\
+				\\
+				C_{123} &= C_3+\Big{(} \frac{1}{C_1}+ \frac{1}{C_2}  \Big{)}^{-1}\\
+				C_{123} &= 3\mu F+\Big{(} \frac{1}{1\mu F}+ \frac{1}{2\mu F}  \Big{)}^{-1}\\
+				C_{123} &= 3\mu F+ \frac{2}{3} \mu F\\
+				C_{123} &= \frac{11}{3} \mu F\\
+				\\
+				Q_{123} &= C_{123}*V_{ad}\\
+				Q_{123} &=
+				\boxed
+				{
+					55\mu C = Q_4
+				}
+			\end{align*}
+		\item
+			\begin{align*}
+				C_{1234} &= \Big{(} \frac{1}{C_{123}}+ \frac{1}{C_4}  \Big{)}^{-1}\\
+				C_{1234} &= \Big{(} \frac{3}{11\mu F}+ \frac{1}{4\mu F}  \Big{)}^{-1}\\
+				C_{1234} &= \frac{44}{23} \mu F\\
+				\\
+				V_{ab} &= \frac{Q_{1234}}{C_{1234}}\\
+				V_{ab} &= \frac{55\cancel{\mu}C*23}{44\cancel{\mu}F}\\
+				\Aboxed
+				{
+					V_{ab} &= 28.75V
+				}
+			\end{align*}
+		\item
+			\begin{align*}
+				V_{123} &= 15V = V_{12}\\
+				\\
+				Q_{12} &= \frac{C_{12}}{V_{12}} \\
+				Q_{12} &= \frac{ 2\mu F }{3*15V} = Q_1\\
+				\Aboxed
+				{
+					Q_{1} &= \frac{2}{45} \mu C
+				}
+			\end{align*}
+		\item
+			\begin{align*}
+					Q_{2} &= \frac{2}{45} \mu C
+			\end{align*}
+	\end{enumerate}
 
 \subsection*{En el siguiente circuito: $C_1 =C_3=3\mu F$;
 	$C_2=C_5=2\mu F$,
@@ -315,7 +361,6 @@ Depende del voltaje del capacitor, su capacitancia y la resistencia del circuito
 	\includesvg[width=0.8\linewidth]{drawing-1}
 \end{figure}
 %}}}
-
 
 \end{document}
 %}}}
