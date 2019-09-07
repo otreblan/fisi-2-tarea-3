@@ -296,7 +296,8 @@ Depende de la diferencia de potencial, su capacitancia y la resistencia del circ
 
 \subsection*{En el siguiente circuito: $C_1 =C_3=3\mu F$;
 	$C_2=C_5=2\mu F$,
-	$C_4=4\mu F$.
+	$C_4=4\mu F$,
+	$V_{eq}=10V$.
 	Todos los interruptores mostrados se encuentran inician abiertos.
 	Si se cierra solo el interruptor $S_1$, determina:}%
 	\begin{minipage}{0.5\textwidth}
@@ -353,6 +354,52 @@ Depende de la diferencia de potencial, su capacitancia y la resistencia del circ
 
 	% }}}
 	\end{minipage}
+	\begin{enumerate}[label=\alph*.]
+		\item
+			\begin{align*}
+				C_{eq} &= \Big{(} \frac{1}{C_{1234}}+ \frac{1}{C_5}  \Big{)}^{-1}\\
+				\\
+				C_{1234} &= C_{12}+C_{34}\\
+				\\
+				C_{12} &= \Big{(} \frac{1}{3\mu F} + \frac{1}{2\mu F} \Big{)}^{-1} = \frac{6}{5}\mu F\\
+				C_{34} &= \Big{(} \frac{1}{3\mu F} + \frac{1}{4\mu F} \Big{)}^{-1} = \frac{12}{7}\mu F\\
+				\\
+				C_{1234} &= \frac{6}{5} \mu F + \frac{12}{7} \mu F = \frac{102}{35} \mu F\\
+				\\
+				C_{eq} &= \Big{(} \frac{35}{102\mu F}+ \frac{1}{2\mu F}  \Big{)}^{-1}\\
+				\Aboxed
+				{
+					C_{eq} &= \frac{51}{43} \mu F
+				}
+			\end{align*}
+		\item
+			\begin{align*}
+				Q_{1234} &= C_{eq}*V_{eq} = \frac{510}{43} \mu C\\
+				\\
+				V_{12} &= \frac{Q_{1234}}{C_{1234}}
+				= \frac{35*510\cancel{\mu} C}{43*102\cancel{\mu} F}
+				=\frac{175}{43}V\\
+				\\
+				Q_1 &= C_{12}*V_{12}
+				= \frac{6}{5} \mu F* \frac{175}{43} V
+				= \frac{210}{43} \mu C\\
+				\\
+				V_1 &= \frac{Q_1}{C_1} \\
+				V_1 &= \frac{210\cancel{\mu} C}{43*3\cancel{\mu} F}\\
+				\Aboxed
+				{
+					V_1 &= \frac{70}{43} V
+				}
+			\end{align*}
+	\end{enumerate}
+	\noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
+	\begin{enumerate}[label=\alph*.]
+		\setcounter{enumi}{2}
+		\item
+			\begin{align*}
+				C_{eq} &= \Big{(} \frac{1}{C_{1234}}+ \frac{1}{C_5}  \Big{)}^{-1}\\
+			\end{align*}
+	\end{enumerate}
 
 \subsection*{Se conforma un capacitor de placas planas con múltiples
 	distribuciones, como se muestra en la figura.
