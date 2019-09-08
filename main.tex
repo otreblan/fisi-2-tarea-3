@@ -492,7 +492,40 @@ Depende de la diferencia de potencial, su capacitancia y la resistencia del circ
 		\end{align*}
 	\item
 		\begin{align*}
-			VISUAL
+			V_e &= V_{ mp } = V_b = 12V\\
+			\\
+			Q_{mp} &= C_{mp}*V_{mp} \\
+			Q_{mp} &= \frac{33}{145\pi*10^7}F *12V\\
+			Q_{mp} &= \frac{396}{145\pi*10^7}C=Q_m=Q_p\\
+			\\
+			V_m &= \frac{Q_m}{C_m}\\
+			V_m &= \frac{396}{145\cancel{\pi}*\cancel{10^7}}C* \frac{5\cancel{\pi}*\cancel{10^7}}{3}F\\
+			V_m &= \frac{132}{29}V\\
+			\\
+			V_p &= \frac{Q_p}{C_p}\\
+			V_p &= \frac{396}{145\cancel{\pi}*\cancel{10^7}}C* \frac{30\cancel{\pi}*\cancel{10^7}}{11}F\\
+			V_p &= \frac{216}{29}V
+			\intertext{Mica}
+			E_m &= \frac{V_m}{d_m}\\
+			E_m &= \frac{132}{29*3m*10^{-4}}V\\
+			\Aboxed
+			{
+				E_m &= \frac{132*10^4}{87} \frac{V}{m}
+			}
+			\intertext{Polietileno}
+			E_p &= \frac{V_p}{d_p}\\
+			E_p &= \frac{216}{29*2m*10^{-4}}V\\
+			\Aboxed
+			{
+				E_p &= \frac{108*10^4}{29} \frac{V}{m}
+			}
+			\intertext{Baquelita}
+			E_b &= \frac{V_b}{d_b}\\
+			E_b &= \frac{12}{5m*10^{-4}}V\\
+			\Aboxed
+			{
+				E_b &= \frac{12*10^4}{5} \frac{V}{m}
+			}
 		\end{align*}
 \end{enumerate}
 %}}}
